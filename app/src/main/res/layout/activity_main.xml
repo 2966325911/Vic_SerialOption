@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/first_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="这个地方填写自动循环的次数"
+        android:numeric="integer"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desc"
+        />
+
+    <EditText
+        android:id="@+id/second_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="这个地方填写秒数,必须小于10"
+        android:visibility="gone"
+        android:textSize="16sp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="startMeasure"-->
+        <!--android:text="开始测量" />-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startPowerOn"
+        android:text="开始供电并测量" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="endPowerOff"
+        android:text="结束供电"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="stopMeasure"
+        android:text="结束测量并断电" />
+
+    <TextView
+        android:id="@+id/measure_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/highPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高压"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lowPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="低压"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pulse_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="脉率"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/translating_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="传输过程中压力"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/translating_pulse_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="传输过程中脉率"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/measure_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="测量次数0"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭当前界面或者按钮Home按键退出"
+        android:onClick="closeApp"
+        />
+
+</LinearLayout>

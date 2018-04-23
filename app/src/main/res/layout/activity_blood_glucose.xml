@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cloudoc.yyd.yybgptestdemo.BloodGlucoseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="glucoseStartPower"
+            android:text="血糖仪开始供电"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="glucoseEndPower"
+            android:text="血糖仪断电"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendEngCmd"
+            android:text="手动发送工程模式命令(只有在上电之后方可发送)"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendCheckCmd"
+            android:text="手动发送校准命令(只有在上电之后方可发送)"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_normal_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="此处正常血糖的值"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_eng_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="此处显示工程的EMC的AD值"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="exitThisActivity"
+        android:textSize="20sp"
+        android:text="退出当前界面" />
+
+
+</RelativeLayout>

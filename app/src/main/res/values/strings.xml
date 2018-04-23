@@ -1,0 +1,5 @@
+<resources>
+    <!--<string name="app_name">血压计循环测试</string>-->
+    <string name="app_name">血糖EMC测试</string>
+    <string name="desc">上面填写自动循环的字数,如果不填写默认为1,如果出现异常情况不能测量,点击关闭界面或者按钮HOME退出该界面,重新进入即可</string>
+</resources>
