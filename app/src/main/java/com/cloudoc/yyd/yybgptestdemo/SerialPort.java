@@ -1,7 +1,7 @@
 package com.cloudoc.yyd.yybgptestdemo;
 
 /**
- * author : yuyandong
+ * author : vic
  * time   : 2017/06/21
  * desc   :
  * version: 1.0

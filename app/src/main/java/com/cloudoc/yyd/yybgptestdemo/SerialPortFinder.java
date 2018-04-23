@@ -26,7 +26,7 @@ import java.util.Iterator;
 import java.util.Vector;
 
 /**
- * 串口通讯的 寻检器
+ * 串口通讯的 寻检器  可以发现自己的板子中可用的串口
  */
 public class SerialPortFinder {
 
